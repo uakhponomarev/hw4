@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,500&display=swap');
+
+%ff-roboto-thin {
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+}
+
+%ff-roboto-light {
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+
+%ff-roboto-medium {
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+@font-face {
+    font-family: 'gotham black';
+    src: url('../fonts/gothemblack/subset-Gotham-Black.eot');
+    src: url('../fonts/gothemblack/subset-Gotham-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/gothemblack/subset-Gotham-Black.woff2') format('woff2'),
+        url('../fonts/gothemblack/subset-Gotham-Black.woff') format('woff'),
+        url('../fonts/gothemblack/subset-Gotham-Black.ttf') format('truetype'),
+        url('../fonts/gothemblack/subset-Gotham-Black.svg#Gotham-Black') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+%ff-gotham-thin {
+    font-family: 'gotham black', sans-serif;
+    font-weight: 100;
+}
+
+%ff-gotham-bold {
+    font-family: 'gotham black', sans-serif;
+    font-weight: 700;
+}
+
+%ff-gotham-black {
+    font-family: 'gotham black', sans-serif;
+    font-weight: 900;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:800&display=swap');
+
+%ff-opensans-extrabold {
+    font-family: 'Open Sans', sans-serif;
+}

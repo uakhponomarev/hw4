@@ -1,0 +1,31 @@
+.nav-menu {
+    @include button;
+    margin-left: 10px;
+    position: relative;
+}
+
+.nav-links {
+    @extend %ff-gotham-black;
+    display: inline-block;
+
+    &:hover {
+        @include shadow;
+        background-color: $clr-hover;
+        color: $white;
+    }
+
+    &:active:after {
+        box-shadow: 2px 3px 0px -1px $clr-shadow,
+            3px 2px 0px -1px $clr-shadow;
+        content: '';
+        display: block;
+        width: 16px;
+        height: 16px;
+        background-color: $clr-hover;
+        position: absolute;
+        top: calc(100% - 8px);
+        left: calc(50% - 8px);
+        transform: rotate(45deg);
+    }
+
+}

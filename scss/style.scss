@@ -1,0 +1,129 @@
+@import 'reset';
+@import 'vars';
+@import 'fonts';
+@import 'mixins';
+@import 'header';
+@import 'slider';
+
+.wrapper {
+    background-image: url('../img/bg.jpg');
+    padding-bottom: 100px;
+}
+
+.bgup {
+    background-image: url('../img/bgup.jpg');
+
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1140px;
+}
+
+.header-container {
+    padding-bottom: 112px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 66px;
+}
+
+.slider {
+    padding-bottom: 96px;
+    position: relative;
+
+    &:after {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 30px;
+        background-image: url('../img/bgup.jpg');
+        position: absolute;
+        top: calc(100% - 15px);
+        left: calc(50% - 15px);
+        transform: rotate(45deg)
+    }
+}
+
+.content-header {
+    padding-top: 80px;
+    text-align: center;
+
+    h2 {
+        @extend %ff-roboto-thin;
+        font-size: 60px;
+        color: $clr-cont-head;
+    }
+
+    span {
+        @extend %ff-roboto-medium;
+        font-size: 30px;
+        color: $white;
+    }
+}
+
+.photos {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+
+    figure {
+        @include bottom;
+        @extend %ff-roboto-medium;
+        width: 340px;
+        height: 310px;
+        font-size: 18px;
+        text-transform: uppercase;
+        background-color: $white;
+        text-align: center;
+        color: $clr-font-pic;
+        border-radius: $bor-rad;
+
+        img {
+            display: inline-block;
+            padding: 20px;
+        }
+    }
+}
+
+.description {
+    @include bottom;
+    @extend %ff-roboto-light;
+    margin-top: 80px;
+    background-color: $white;
+    font-size: 13px;
+    padding: 35px 20px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: $bor-rad;
+    color: #6d5384;
+
+    & span span {
+        @extend %ff-roboto-medium;
+    }
+}
+
+.line-bag-ruby {
+    margin-top: 65px;
+    height: 2px;
+    width: 100%;
+    background-color: $clr-descr;
+}
+
+footer {
+    @extend %ff-roboto-light;
+    margin-top: 50px;
+    font-size: 14px;
+
+    span {
+        display: block;
+        float: left;
+    }
+
+    span+span {
+        float: right;
+    }
+}

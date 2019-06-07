@@ -1,0 +1,35 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+<metadata>
+Created by FontForge 20170731 at Thu Sep 29 19:00:26 2005
+ By Aleksey,,,
+HTF Gotham  Copr. 2003 The Hoefler Type Foundry, Inc. Info: www.typography.com
+</metadata>
+<defs>
+<font id="Gotham-Black" horiz-adv-x="500" >
+  <font-face 
+    font-family="Gotham"
+    font-weight="400"
+    font-stretch="normal"
+    units-per-em="1000"
+    panose-1="2 0 6 4 4 0 0 2 0 4"
+    ascent="800"
+    descent="-200"
+    bbox="0 0 0 0"
+    underline-thickness="20"
+    underline-position="-173"
+    unicode-range="U+0020-0020"
+  />
+<missing-glyph 
+ />
+    <glyph glyph-name=".notdef" 
+ />
+    <glyph glyph-name=".null" horiz-adv-x="0" 
+ />
+    <glyph glyph-name="nonmarkingreturn" horiz-adv-x="333" 
+ />
+    <glyph glyph-name="space" unicode=" " horiz-adv-x="277" 
+ />
+  </font>
+</defs></svg>

@@ -1,0 +1,1 @@
+powershell.exe sass --watch scss:css

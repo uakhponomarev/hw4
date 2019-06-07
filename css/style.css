@@ -1,0 +1,325 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.content-header h2 {
+  font-weight: 100;
+  font-family: "Roboto", sans-serif;
+}
+
+footer, .description {
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+}
+
+.description span span, .photos figure, .content-header span {
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+}
+
+@font-face {
+  font-family: "gotham black";
+  src: url("../fonts/gothemblack/subset-Gotham-Black.eot");
+  src: url("../fonts/gothemblack/subset-Gotham-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/gothemblack/subset-Gotham-Black.woff2") format("woff2"), url("../fonts/gothemblack/subset-Gotham-Black.woff") format("woff"), url("../fonts/gothemblack/subset-Gotham-Black.ttf") format("truetype"), url("../fonts/gothemblack/subset-Gotham-Black.svg#Gotham-Black") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+.slider-content > span {
+  font-family: "gotham black", sans-serif;
+  font-weight: 100;
+}
+
+.slider-header > span {
+  font-family: "gotham black", sans-serif;
+  font-weight: 700;
+}
+
+.slider-title, .nav-links {
+  font-family: "gotham black", sans-serif;
+  font-weight: 900;
+}
+
+.slider-content-buttons li a {
+  font-family: "Open Sans", sans-serif;
+}
+
+.nav-menu {
+  display: inline-block;
+  width: 140px;
+  text-align: center;
+  margin-left: 10px;
+  position: relative;
+}
+.nav-menu a {
+  display: inline-block;
+  border: 1px solid #9884aa;
+  border-radius: 4px;
+  width: 100%;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 20px 0;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: inline-block;
+}
+.nav-links:hover {
+  box-shadow: 0px 3px 0px #4c2f65;
+  background-color: #f7df59;
+  color: #ffffff;
+}
+.nav-links:active:after {
+  box-shadow: 2px 3px 0px -1px #4c2f65, 3px 2px 0px -1px #4c2f65;
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-color: #f7df59;
+  position: absolute;
+  top: calc(100% - 8px);
+  left: calc(50% - 8px);
+  transform: rotate(45deg);
+}
+
+.slider-header {
+  color: #ffffff;
+}
+.slider-header > span {
+  word-spacing: 7px;
+  letter-spacing: 0px;
+  left: 5px;
+  font-size: 34px;
+}
+.slider-header::after {
+  content: "";
+  display: block;
+  margin-top: 46px;
+  width: 100%;
+  height: 2px;
+  background-color: #9884aa;
+}
+
+.slider-title {
+  font-size: 112px;
+  word-spacing: -9px;
+  letter-spacing: -6px;
+}
+.slider-title span {
+  color: #ead7fb;
+}
+
+.slider-content {
+  margin-top: 56px;
+  text-align: center;
+}
+.slider-content > span {
+  display: block;
+  font-size: 28px;
+  color: #ffffff;
+}
+
+.slider-content-links {
+  margin-top: 60px;
+}
+.slider-content-links li {
+  display: inline-block;
+  position: relative;
+}
+.slider-content-links li a {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  margin-right: 2px;
+  position: relative;
+}
+.slider-content-links li a:active {
+  border: 1px solid #443255;
+  background-color: transparent;
+}
+.slider-content-links li a:active::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #443255;
+  position: absolute;
+  top: calc(50% - 4px);
+  left: calc(50% - 4px);
+}
+
+.slider-content-buttons {
+  margin-top: 50px;
+}
+.slider-content-buttons li {
+  display: inline-block;
+  width: 140px;
+  text-align: center;
+  color: #fefefe;
+}
+.slider-content-buttons li a {
+  display: inline-block;
+  border: 1px solid #9884aa;
+  border-radius: 4px;
+  width: 100%;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 20px 0;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.slider-content-buttons li:last-child {
+  margin-left: 5px;
+}
+.slider-content-buttons li a:hover {
+  box-shadow: 0px 3px 0px #4c2f65;
+  background-color: #69c7e2;
+}
+
+.wrapper {
+  background-image: url("../img/bg.jpg");
+  padding-bottom: 100px;
+}
+
+.bgup {
+  background-image: url("../img/bgup.jpg");
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1140px;
+}
+
+.header-container {
+  padding-bottom: 112px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 66px;
+}
+
+.slider {
+  padding-bottom: 96px;
+  position: relative;
+}
+.slider:after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/bgup.jpg");
+  position: absolute;
+  top: calc(100% - 15px);
+  left: calc(50% - 15px);
+  transform: rotate(45deg);
+}
+
+.content-header {
+  padding-top: 80px;
+  text-align: center;
+}
+.content-header h2 {
+  font-size: 60px;
+  color: #654d7b;
+}
+.content-header span {
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.photos {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+.photos figure {
+  border-bottom: 3px solid #d1d1d1;
+  position: relative;
+  width: 340px;
+  height: 310px;
+  font-size: 18px;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  text-align: center;
+  color: #6b5181;
+  border-radius: 4px;
+}
+.photos figure:before {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #dcdcdc;
+  position: absolute;
+  top: calc(100% + 3px);
+  left: 0;
+  box-shadow: 0 3px 0 #d1d1d1;
+}
+.photos figure img {
+  display: inline-block;
+  padding: 20px;
+}
+
+.description {
+  border-bottom: 3px solid #d1d1d1;
+  position: relative;
+  margin-top: 80px;
+  background-color: #ffffff;
+  font-size: 13px;
+  padding: 35px 20px;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 4px;
+  color: #6d5384;
+}
+.description:before {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #dcdcdc;
+  position: absolute;
+  top: calc(100% + 3px);
+  left: 0;
+  box-shadow: 0 3px 0 #d1d1d1;
+}
+.line-bag-ruby {
+  margin-top: 65px;
+  height: 2px;
+  width: 100%;
+  background-color: #6d5384;
+}
+
+footer {
+  margin-top: 50px;
+  font-size: 14px;
+}
+footer span {
+  display: block;
+  float: left;
+}
+footer span + span {
+  float: right;
+}
+
+/*# sourceMappingURL=style.css.map */
