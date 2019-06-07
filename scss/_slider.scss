@@ -30,6 +30,10 @@
     }
 }
 
+.slider-content-buttons {
+    text-align: center;
+}
+
 .slider-content {
     margin-top: 56px;
     text-align: center;
@@ -62,7 +66,7 @@
 
             &:active::before {
                 content: "";
-                @include circle(8px, $clr-slider-links);               
+                @include circle(8px, $clr-slider-links);
                 position: absolute;
                 top: calc(50% - 4px);
                 left: calc(50% - 4px);
@@ -92,4 +96,17 @@
         }
     }
 
+}
+
+
+.sl2 .slider-header {
+    color: #f34 !important;
+}
+
+.sl3 .slider-header {
+    color: #33f !important;
+}
+
+.sl4 .slider-header {
+    color: #3f3 !important;
 }
