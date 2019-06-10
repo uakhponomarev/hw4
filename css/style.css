@@ -304,6 +304,7 @@ footer, .description {
   position: relative;
   outline: 0;
   border: 0;
+  cursor: pointer;
 }
 .slick-dots li button:active {
   border: 1px solid #443255;
