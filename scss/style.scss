@@ -1,10 +1,10 @@
 @import 'reset';
 @import 'vars';
 @import 'fonts';
-@import 'slick';
+@import 'slick/slick';
 @import 'mixins';
 @import 'header';
-@import 'slick-theme';
+@import 'slick/slick-theme';
 @import 'slider';
 
 .wrapper {
@@ -128,3 +128,6 @@ footer {
         float: right;
     }
 }
+
+@import 'media/mobile';
+@import 'media/tablet';
