@@ -1,0 +1,27 @@
+@media screen and (max-width:768px) {
+    nav{
+        display: none;
+    }
+
+    .burger{
+        height: 50px;
+        width: 50px;
+        background-color: #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .lines{
+            height: 4px;
+            width: 30px;  
+            margin-top: 5px;              
+            background-color: $clr-font-pic;
+            border-radius: 3px;
+            &:first-child{
+                margin-top: 0;
+            }
+           
+        }
+    }
+}

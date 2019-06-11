@@ -641,5 +641,31 @@ footer span + span {
     margin-top: 10px;
   }
 }
+@media screen and (max-width: 768px) {
+  nav {
+    display: none;
+  }
+
+  .burger {
+    height: 50px;
+    width: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .burger .lines {
+    height: 4px;
+    width: 30px;
+    margin-top: 5px;
+    background-color: #6b5181;
+    border-radius: 3px;
+  }
+  .burger .lines:first-child {
+    margin-top: 0;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
