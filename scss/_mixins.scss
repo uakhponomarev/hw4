@@ -45,3 +45,54 @@
     }
 
 }
+
+// (on/off)if state equals ON nav menu change to burger menu and vice versa with OFF
+@mixin burger($state) {
+    @if($state==on) {
+        .burger {
+            display: flex;
+        }
+
+        nav {
+            display: none;
+        }
+    }
+
+    @else if($state==off) {
+        .burger {
+            display: none;
+        }
+
+        nav {
+            display: block;
+        }
+    }
+
+}
+
+@mixin burger-menu {
+    .burger {
+        height: 50px;
+        width: 50px;
+        background-color: #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .lines {
+            height: 4px;
+            width: 30px;
+            margin-top: 5px;
+            background-color: $clr-font-pic;
+            border-radius: 3px;
+
+            &:first-child {
+                margin-top: 0;
+            }
+
+        }
+    }
+
+}
