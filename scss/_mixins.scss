@@ -46,7 +46,7 @@
 
 }
 
-// (on/off)if state equals ON nav menu change to burger menu and vice versa with OFF
+// (on/off)if state equals ON nav-menu change to burger-menu and vice versa with OFF
 @mixin burger($state) {
     @if($state==on) {
         .burger {
@@ -91,6 +91,32 @@
             &:first-child {
                 margin-top: 0;
             }
+
+        }
+
+        &:active {
+
+            &>nav {
+                display: block;
+                position: absolute;
+                top: 60%;
+                left: 0;
+
+                ul {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    li {
+                        width: 100px;
+
+                        a {
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+
 
         }
     }
