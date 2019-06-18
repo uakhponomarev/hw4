@@ -350,10 +350,6 @@ footer, .description {
   color: #ead7fb;
 }
 
-.slider-content-buttons {
-  text-align: center;
-}
-
 .slider-content {
   margin-top: 56px;
   text-align: center;
@@ -394,6 +390,10 @@ footer, .description {
   position: absolute;
   top: calc(50% - 4px);
   left: calc(50% - 4px);
+}
+
+.slider-content-buttons {
+  text-align: center;
 }
 
 .slider-content-buttons {
@@ -451,7 +451,8 @@ footer, .description {
 
 .container {
   margin: 0 auto;
-  max-width: 1140px;
+  padding: 0 15px;
+  max-width: 1170px;
 }
 
 .header-container {
@@ -716,6 +717,9 @@ nav {
     margin: 0;
     margin-top: 15px;
   }
+  .header-container ul li a {
+    font-size: 12px;
+  }
 
   .slider-header {
     text-align: center;
@@ -724,7 +728,7 @@ nav {
   .slider-title {
     word-spacing: 0;
     letter-spacing: 0;
-    font-size: 27px;
+    font-size: 24px;
     margin: 0;
     margin-bottom: 20px;
   }
@@ -732,22 +736,27 @@ nav {
     display: block;
   }
   .slider-title + span {
-    font-size: 17px;
+    font-size: 12px;
   }
 
   .slider-content span {
-    font-size: 17px;
+    font-size: 12px;
   }
 
   .content-header h2 {
-    font-size: 30px;
+    font-size: 21px;
   }
   .content-header span {
-    font-size: 17px;
+    font-size: 12px;
   }
 
   .slider-content-buttons li {
     margin-top: 15px;
+    width: calc(50% - 17px);
+  }
+  .slider-content-buttons li a {
+    font-size: 10px;
+    padding: 10px 0;
   }
 
   .photos {
