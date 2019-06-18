@@ -1,0 +1,78 @@
+@media screen and (max-width:980px) {
+
+    @include burger(on);
+
+    .logo img {
+        width: calc(100% - 70px);
+    }
+
+    .slider-header {
+        text-align: center;
+    }
+
+    .slider-title {
+        word-spacing: 0;
+        letter-spacing: 0;
+        font-size: 37px;
+
+        &+span {
+            font-size: 21px;
+        }
+    }
+
+    .content-header {
+
+        h2 {
+            font-size: 34px;
+        }
+
+        span {
+            font-size: 21px;
+        }
+    }
+
+    .slider-content span {
+        font-size: 21px;
+    }
+
+    .content-header {
+
+        h2 {
+            font-size: 34px;
+        }
+
+        span {
+            font-size: 21px;
+        }
+    }
+
+    .photos figure {
+        margin: 20px 0 0 5px;
+        width: 100%;
+        height: 100%;
+        padding-bottom: 20px;
+        font-size: 14px;
+
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    .description {
+        text-align: justify;
+        text-indent: 30px;
+        line-height: 25px;
+
+        br {
+            display: none;
+        }
+    }
+
+
+    footer {
+        text-align: center;
+        font-size: 11px;
+    }
+
+}
