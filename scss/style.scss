@@ -107,7 +107,8 @@
 
     & span span {
         @extend %ff-roboto-medium;
-        a{
+
+        a {
             text-decoration: underline;
         }
     }
@@ -138,6 +139,7 @@ footer {
 @include burger-menu;
 @include burger(off);
 
+@import 'media/large';
 @import 'media/wide';
 @import 'media/tablet';
 @import 'media/small';
