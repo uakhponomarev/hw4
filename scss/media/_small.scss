@@ -1,4 +1,4 @@
-@media screen and (max-width:768px) {
+@media screen and (max-width:480px) {
 
     @include burger(on);
 
@@ -13,7 +13,7 @@
     .slider-title {
         word-spacing: 0;
         letter-spacing: 0;
-        font-size: 57px;
+        font-size: 33px;
         margin: 0;
         margin-bottom: 20px;
 
@@ -22,18 +22,45 @@
         }
 
         &+span {
-            font-size: 27px;
+            font-size: 17px;
         }
     }
 
     .content-header {
 
         h2 {
-            font-size: 50px;
+            font-size: 30px;
         }
 
         span {
-            font-size: 27px;
+            font-size: 17px;
+        }
+    }
+
+    .slider-content span {
+        font-size: 17px;
+    }
+
+    .content-header {
+
+        h2 {
+            font-size: 30px;
+        }
+
+        span {
+            font-size: 17px;
+        }
+    }
+
+    .slider-content-buttons {
+        li {
+            margin-top: 15px;
+            width: calc(50% - 17px);
+
+            a {
+                font-size: 14px;
+                padding: 15px 0;
+            }
         }
     }
 
@@ -64,8 +91,19 @@
         }
     }
 
+
     footer {
-        font-size: 10px;
+        text-align: center;
+        font-size: 12px;
+
+        span {
+            float: none;
+        }
+
+        span+span {
+            float: none;
+            margin-top: 10px;
+        }
     }
 
 }

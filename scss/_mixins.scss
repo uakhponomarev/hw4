@@ -14,6 +14,7 @@
     display: inline-block;
     width: 140px;
     text-align: center;
+    font-size: 18px;
 
     a {
         display: inline-block;
@@ -21,7 +22,6 @@
         border-radius: $bor-rad;
         width: 100%;
         color: $white;
-        font-size: 18px;
         padding: 20px 0;
         text-transform: uppercase;
         cursor: pointer;
@@ -80,10 +80,11 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        cursor: pointer;
 
         .lines {
             height: 4px;
-            width: 30px;
+            width: 70%;
             margin-top: 5px;
             background-color: $clr-font-pic;
             border-radius: 3px;
@@ -98,26 +99,27 @@
 
             &>nav {
                 display: block;
+                width: 100%;
                 position: absolute;
-                top: 60%;
+                background-image: url("../img/bgup.jpg");
+                top: 0;
                 left: 0;
+                right: 0;
+                bottom: 0;
 
                 ul {
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    flex-direction: column;
+                    padding: 15px;
 
                     li {
-                        width: 100px;
-
-                        a {
-                            font-size: 10px;
-                        }
+                        width: 50%px;
+                        font-size: 10px;
                     }
                 }
             }
-
-
         }
     }
 

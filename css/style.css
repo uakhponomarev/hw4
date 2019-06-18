@@ -154,6 +154,7 @@ footer, .description {
   display: inline-block;
   width: 140px;
   text-align: center;
+  font-size: 18px;
   margin-left: 10px;
   position: relative;
 }
@@ -163,7 +164,6 @@ footer, .description {
   border-radius: 4px;
   width: 100%;
   color: #ffffff;
-  font-size: 18px;
   padding: 20px 0;
   text-transform: uppercase;
   cursor: pointer;
@@ -403,6 +403,7 @@ footer, .description {
   display: inline-block;
   width: 140px;
   text-align: center;
+  font-size: 18px;
   color: #fefefe;
 }
 .slider-content-buttons li a {
@@ -411,7 +412,6 @@ footer, .description {
   border-radius: 4px;
   width: 100%;
   color: #ffffff;
-  font-size: 18px;
   padding: 20px 0;
   text-transform: uppercase;
   cursor: pointer;
@@ -456,14 +456,11 @@ footer, .description {
 }
 
 .header-container {
-  padding-bottom: 112px;
-}
-
-.header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 66px;
+  padding-bottom: 112px;
   position: relative;
 }
 
@@ -580,10 +577,11 @@ footer span + span {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  cursor: pointer;
 }
 .burger .lines {
   height: 4px;
-  width: 30px;
+  width: 70%;
   margin-top: 5px;
   background-color: #6b5181;
   border-radius: 3px;
@@ -593,19 +591,23 @@ footer span + span {
 }
 .burger:active > nav {
   display: block;
+  width: 100%;
   position: absolute;
-  top: 60%;
+  background-image: url("../img/bgup.jpg");
+  top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
 }
 .burger:active > nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  padding: 15px;
 }
 .burger:active > nav ul li {
-  width: 100px;
-}
-.burger:active > nav ul li a {
+  width: 50% px;
   font-size: 10px;
 }
 
@@ -617,7 +619,7 @@ nav {
   display: block;
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 768px) {
   .burger {
     display: none;
   }
@@ -626,7 +628,7 @@ nav {
     display: block;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .burger {
     display: flex;
   }
@@ -646,7 +648,7 @@ nav {
   .slider-title {
     word-spacing: 0;
     letter-spacing: 0;
-    font-size: 57px;
+    font-size: 33px;
     margin: 0;
     margin-bottom: 20px;
   }
@@ -654,14 +656,34 @@ nav {
     display: block;
   }
   .slider-title + span {
-    font-size: 27px;
+    font-size: 17px;
   }
 
   .content-header h2 {
-    font-size: 50px;
+    font-size: 30px;
   }
   .content-header span {
-    font-size: 27px;
+    font-size: 17px;
+  }
+
+  .slider-content span {
+    font-size: 17px;
+  }
+
+  .content-header h2 {
+    font-size: 30px;
+  }
+  .content-header span {
+    font-size: 17px;
+  }
+
+  .slider-content-buttons li {
+    margin-top: 15px;
+    width: calc(50% - 17px);
+  }
+  .slider-content-buttons li a {
+    font-size: 14px;
+    padding: 15px 0;
   }
 
   .photos {
@@ -689,7 +711,15 @@ nav {
   }
 
   footer {
-    font-size: 10px;
+    text-align: center;
+    font-size: 12px;
+  }
+  footer span {
+    float: none;
+  }
+  footer span + span {
+    float: none;
+    margin-top: 10px;
   }
 }
 @media screen and (max-width: 320px) {

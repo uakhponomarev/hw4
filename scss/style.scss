@@ -27,14 +27,11 @@
 }
 
 .header-container {
-    padding-bottom: 112px;
-}
-
-.header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 66px;
+    padding-bottom: 112px;
     position: relative;
 }
 
